@@ -1,5 +1,5 @@
 describe("#comparing strings", function() {
-  it("String should contain t", function functionName() {
+  it("String should contain t", function() {
     assert.toContain("Agata", "t");
   });
 });

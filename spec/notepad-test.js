@@ -1,19 +1,27 @@
-function listingNotes() {
-  var notepad = new Notepad()
+//
+// function addingNotes() {
+//   var note = new Note('I love JS')
+//   var note2 = new Note('I hate JS')
+//   var notepad = new Notepad()
+//   notepad._addToArray(note)
+//   notepad._addToArray(note2)
+//
+//   assert.isTrue(notepad.notes.length = 2, "Adds multiple notes to notepad array");
+// }
+//
+// addingNotes();
 
-  assert.isTrue(notepad.notes.length == 0, 'Notepad is an empty array');
-}
+describe('Notepad', function(){
 
-listingNotes();
+  it('Notepad starts as empty Array', function(){
+    var notepad = new Notepad();
+    assert.isEqual(notepad.notes.length, 0);
+  });
 
-function addingNotes() {
-  var note = new Note('I love JS')
-  var note2 = new Note('I hate JS')
-  var notepad = new Notepad()
-  notepad._addToArray(note)
-  notepad._addToArray(note2)
-
-  assert.isTrue(notepad.notes.length = 2, "Adds multiple notes to notepad array");
-}
-
-addingNotes();
+  it('Notepad stores notes in array', function(){
+    var notepad = new Notepad();
+    var note = new Note('I hate Jasmine')
+    notepad._addToArray(note)
+    assert.isEqual(notepad.notes.length, 1)
+  });
+});
