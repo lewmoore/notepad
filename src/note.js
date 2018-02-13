@@ -1,8 +1,8 @@
 (function(exports){
   function Note(note) {
-    this.text = note;
+    this.text = note
 
-    Note.prototype.viewNote = function () {
+    Note.prototype.viewNote = function() {
       return this.text;
     };
   };
