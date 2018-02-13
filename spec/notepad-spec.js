@@ -1,11 +1,15 @@
-describe("comparing strings", function() {
-  assert.toContain("Agata", "t");
+describe("#comparing strings", function() {
+  it("String should contain t", function functionName() {
+    assert.toContain("Agata", "t");
+  });
 });
 
-describe("comparing two numbers", function() {
-  assert.isEqual(3,3);
-});
+describe("#comparing two numbers", function() {
+  it("Should return true if numbers equal", function () {
+    assert.isEqual(3,3);
+  });
 
-describe("comparing if two numbers are different", function() {
-  assert.isNotEqual(45,20);
+  it("Two numbers should not be equal", function () {
+    assert.isNotEqual(45,25);
+  });
 });

@@ -26,10 +26,18 @@ var assert =  {
 };
 
 
-var describe = function(message, testFunc) {
+var describe = function(messageOuter, it) {
+  console.log(messageOuter);
+  it();
+};
+
+var it = function (messageInner, testFunc) {
   try {
     testFunc();
+    console.log('%c' + messageInner, 'color: green');
+
   } catch(err) {
     console.error("Failure", err);
+    console.log('%c' + messageInner, 'color: red');
   }
 };
