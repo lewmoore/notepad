@@ -4,12 +4,12 @@
 
     Notepad.prototype.listNotes = function(){
       this.notes.forEach(function(element) {
-        return element;
+        console.log(element);
       });
     }
 
     Notepad.prototype._addToArray = function(note){
-      this.notes.push(note)
+      this.notes.push(note.text)
     }
   }
   exports.Notepad = Notepad

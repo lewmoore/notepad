@@ -13,7 +13,7 @@ function addingNotes() {
   notepad._addToArray(note)
   notepad._addToArray(note2)
 
-  assert.isTrue(notepad.notes.length === 2, "Adds multiple notes to notepad array");
+  assert.isTrue(notepad.notes.length = 2, "Adds multiple notes to notepad array");
 }
 
 addingNotes();
