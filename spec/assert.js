@@ -25,12 +25,14 @@ var assert =  {
     }
 };
 
-
+//-----> describe block <-------
 var describe = function(messageOuter, it) {
   console.log(messageOuter);
   it();
 };
 
+
+//----->  it block <-------
 var it = function (messageInner, testFunc) {
   try {
     testFunc();
