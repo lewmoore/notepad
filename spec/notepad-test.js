@@ -12,16 +12,15 @@
 // addingNotes();
 
 describe('Notepad', function(){
-
+var notepad = new Notepad();
   it('Notepad starts as empty Array', function(){
-    var notepad = new Notepad();
     assert.isEqual(notepad.notes.length, 0);
   });
 
   it('Notepad stores notes in array', function(){
-    var notepad = new Notepad();
     var note = new Note('I hate Jasmine')
+    var note2 = new Note('Jasmine')
     notepad._addToArray(note)
-    assert.isEqual(notepad.notes.length, 1)
+    assert.arrayContain(notepad.notes, 'I hate Jasmine')
   });
 });
