@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     console.log(notepad.notes);
     document.querySelector("textarea").value = "";
 
+    document.querySelector("ul").insertAdjacentHTML('afterbegin', notepad.listNotes());
+    console.log(notepad.listNotes());
+
   });
 
 

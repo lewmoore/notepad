@@ -4,8 +4,7 @@
 
     Notepad.prototype.listNotes = function(){
       var giada;
-      this.notes.forEach(function(element) {
-        giada = element.substr(0, 19);
+      this.notes.forEach(function(element) { giada = element.substr(0, 19);
       });
       return giada;
     };
