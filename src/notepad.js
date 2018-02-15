@@ -3,11 +3,13 @@
     this.notes = [];
 
     Notepad.prototype.listNotes = function(){
-      var giada;
-      this.notes.forEach(function(element) { giada = element.substr(0, 19);
-      });
-      return giada;
-    };
+     var input;
+     this.notes.forEach(function(element) { input = element.substr(0, 20);
+       console.log(input);
+       return input;
+     });
+     return input;
+   };
 
     Notepad.prototype._addToArray = function(note){
       this.notes.push(note.text);
