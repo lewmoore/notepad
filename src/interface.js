@@ -10,9 +10,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     var li = document.createElement("li");
-    var link = <a href='#notepad.notes.length'>notepad.listNotes() + "..."</a>
-    li.appendChild(document.createTextNode(link));
+    var a = document.createElement("a");
+    // li.appendChild(document.createTextNode(notepad.listNotes() + "..."));
+    a.textContent = notepad.listNotes() + "...";
     li.setAttribute('id', 'number-' + notepad.notes.length);
+    a.setAttribute('href', "#notepad.notes.length");
+    li.appendChild(a)
     document.querySelector("ul").appendChild(li);
     console.log(li.id)
 
