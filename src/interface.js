@@ -10,8 +10,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode(notepad.listNotes() + "..."));
+    var link = <a href='#notepad.notes.length'>notepad.listNotes() + "..."</a>
+    li.appendChild(document.createTextNode(link));
+    li.setAttribute('id', 'number-' + notepad.notes.length);
     document.querySelector("ul").appendChild(li);
+    console.log(li.id)
 
     // parentNode.insertBefore(newChild, refChild)
   });
