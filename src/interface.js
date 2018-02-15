@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode(notepad.listNotes()));
+    li.appendChild(document.createTextNode(notepad.listNotes() + "..."));
     document.querySelector("ul").appendChild(li);
 
     // parentNode.insertBefore(newChild, refChild)
