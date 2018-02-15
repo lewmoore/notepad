@@ -22,5 +22,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // parentNode.insertBefore(newChild, refChild)
   });
 
+  makeUrlChanesShowNoteForCurrentPage();
+
+  function makeUrlChanesShowNoteForCurrentPage() {
+    window.addEventListener("hashchange", showNoteForCurrentPage)
+  };
+
+  function showNoteForCurrentPage() {
+    showNote(getNoteFromUrl(window.location))
+  };
+
+  function getNoteFromUrl(location) {
+    return location.hash.split("#")[1];
+  };
+
+
+  function showNote(note) {
+    document.getElementById("note_link").innerHTML = note;
+  };
 
 });
