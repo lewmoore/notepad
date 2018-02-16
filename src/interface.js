@@ -1,29 +1,22 @@
   var notepad = new Notepad();
 
-
   document.getElementById('addNote').addEventListener("click", function () {
-    console.log('setting on click');
 
     var text = document.querySelector("textarea").value;
     notepad._addToArray(new Note(text));
 
-    console.log(notepad.notes);
     document.querySelector("textarea").value = "";
 
 
     var li = document.createElement("li");
     var a = document.createElement("a");
-    // li.appendChild(document.createTextNode(notepad.listNotes() + "..."));
+
     a.textContent = notepad.listNotes() + "...";
-    li.setAttribute('id', 'number-' + notepad.notes.length);
+    a.setAttribute('id', 'number-' + notepad.notes.length);
     a.setAttribute('href', "#" + text);
     li.appendChild(a);
     document.querySelector("ul").appendChild(li);
 
-    console.log(li.id);
-
-    // parentNode.insertBefore(newChild, refChild)
-  // });
 
   makeUrlChanesShowNoteForCurrentPage();
 
@@ -36,11 +29,8 @@
   }
 
   function getNoteFromUrl(location) {
-    console.log("getNoteFromUrl");
-    console.log(location.hash.split("#")[1]);
     return location.hash.split("#")[1];
   }
-
 
   function showNote(note) {
     document.getElementById("note_link").innerHTML = note;
