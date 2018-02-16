@@ -14,7 +14,6 @@ var notepad = new Notepad();
       var note = new Note('I love to code and test drive all of my development');
       notepad._addToArray(note);
       var test = notepad.listNotes();
-      console.log(notepad.listNotes());
       assert.isEqual(test , "I love to code and ");
     });
   });
