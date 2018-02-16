@@ -1,7 +1,9 @@
-document.addEventListener("DOMContentLoaded", function(event) {
   var notepad = new Notepad();
 
-  document.querySelector('button').addEventListener("click", function () {
+
+  document.getElementById('addNote').addEventListener("click", function () {
+    console.log('setting on click');
+
     var text = document.querySelector("textarea").value;
     notepad._addToArray(new Note(text));
 
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     a.setAttribute('href', "#" + text);
     li.appendChild(a);
     document.querySelector("ul").appendChild(li);
+
     console.log(li.id);
 
     // parentNode.insertBefore(newChild, refChild)
