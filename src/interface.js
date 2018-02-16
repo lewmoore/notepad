@@ -23,7 +23,7 @@
     console.log(li.id);
 
     // parentNode.insertBefore(newChild, refChild)
-  });
+  // });
 
   makeUrlChanesShowNoteForCurrentPage();
 
