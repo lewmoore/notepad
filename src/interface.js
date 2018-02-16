@@ -15,7 +15,7 @@
     a.setAttribute('id', 'number-' + notepad.notes.length);
     a.setAttribute('href', "#" + text);
     li.appendChild(a);
-    document.querySelector("ul").appendChild(li);
+    document.querySelector("ol").appendChild(li);
 
 
   makeUrlChanesShowNoteForCurrentPage();
