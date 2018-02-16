@@ -6,8 +6,14 @@
 
       document.getElementById("textarea").textContent = "This is a test!";
       document.getElementById("addNote").click();
+
       console.log("after click");
+      var content = document.querySelector('li');
+      console.log(content.textContent);
+
+      assert.isEqual(content.textContent,"This is a test!...");
 
 
     });
   });
+  
