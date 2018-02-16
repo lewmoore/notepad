@@ -15,7 +15,7 @@
     var a = document.createElement("a");
     // li.appendChild(document.createTextNode(notepad.listNotes() + "..."));
     a.textContent = notepad.listNotes() + "...";
-    li.setAttribute('id', 'number-' + notepad.notes.length);
+    a.setAttribute('id', 'number-' + notepad.notes.length);
     a.setAttribute('href', "#" + text);
     li.appendChild(a);
     document.querySelector("ul").appendChild(li);
