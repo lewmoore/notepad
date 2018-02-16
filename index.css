@@ -1,0 +1,56 @@
+body {
+  /* background-color: red; */
+  background-image: url("https://hdwallsource.com/img/2016/8/kill-bill-sword-computer-wallpaper-54203-55936-hd-wallpapers.jpg");
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 22px;
+}
+
+h1 {
+  margin-left: 70px;
+}
+
+.content {
+  background-color: #fff;
+  height: 400px;
+  width: 30%;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+textarea {
+  /* height: 100px; */
+  /* width: 35%; */
+  margin-left: 70px;
+  border: solid 2px red;
+  vertical-align: top;
+  padding-bottom: 0px;
+  /* margin-bottom: 0px; */
+}
+
+textarea:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #cc0000
+}
+
+button {
+  margin-left: 70px;
+  font-family: 'Nanum Pen Script', cursive;
+  background-color: black;
+  color: red;
+  cursor: pointer;
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
