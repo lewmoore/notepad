@@ -5,7 +5,6 @@
     Notepad.prototype.listNotes = function(){
      var input;
      this.notes.forEach(function(element) { input = element.substr(0, 20);
-       console.log(input);
        return input;
      });
      return input;
