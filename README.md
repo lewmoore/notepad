@@ -23,3 +23,8 @@ So I can see all the information in the note
 ```
 
 (NB: notes will not be permanently stored. If the user refreshes their web page, they will lose their notes.)
+
+![Screenshot-1](images/screenshot-1-page.jpg)
+![Screenshot-2](images/screenshot-2-page.jpg)
+![Screenshot-3](images/screenshot-3-page.jpg)
+![Screenshot-4](images/screenshot-4-page.jpg)
