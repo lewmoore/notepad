@@ -1,7 +1,5 @@
+describe("#Creating a note", function () {
 
-  
-  describe("#Creating a note", function () {
-  
 
 describe("#Creating a note", function () {
 
@@ -9,10 +7,9 @@ describe("#Creating a note", function () {
       document.getElementById("textarea").textContent = "This is a test!";
       document.getElementById("addNote").click();
       var content = document.querySelector('li');
-  
+
       assert.isEqual(content.textContent,"This is a test!...");
-  
+
     });
   });
-  
-
+});

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
     <script type="text/javascript" src="lib/assert.js"></script>
     <script type="text/javascript" src="src/note.js"></script>
     <script type="text/javascript" src="src/notepad.js"></script>
@@ -12,26 +14,30 @@
 
   </head>
   <body>
-    <h1>NOTEPAD</h1>
+    <h1>Death list five</h1>
     <div id="app">
     <form id="noteForm">
-      <textarea name="text" id="textarea" cols="80" rows="10"></textarea>
-      <button type="button" id="addNote">add note</button>
+      <textarea name="text" id="textarea"></textarea>
+      <br>
+      <button type="button" id="addNote">add target</button>
     </form>
     </div>
-    <div class="note-list">
-      <h3>ALL THE NOTES:</h3>
-      <ul>
+    <div class="content">
 
-      </ul>
+      <div class="note-list">
+        <h3>ALL THE NOTES:</h3>
+        <ol>
+
+        </ol>
+      </div>
+      <div id="note_link">
+
     </div>
-    <div id="note_link">
-
     </div>
 
     <script type="text/javascript" src="src/interface.js"></script>
-    <script type="text/javascript" src="spec/feature/seeFullNoteSpec.js"></script>
     <script type="text/javascript" src="spec/feature/createNoteSpec.js"></script>
     <script type="text/javascript" src="spec/feature/clickOnNoteSpec.js"></script>
+
   </body>
 </html>
