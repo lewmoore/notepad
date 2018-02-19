@@ -26,7 +26,7 @@ So I can see all the information in the note
 
 #### GOAL OF THE PROJECT
 
-The primary goal of this project was to create within five days a frintend, single page app using only pure JavaScript, which included creating our own testing framework.
+The primary goal of this project was to create within five days a frontend, single page app using only pure JavaScript, which included creating our own testing framework.
 
 #### APP USABILITY
 
